@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(12, 9, 39);
+    font-family: Merriweather;
+    src: url(https://fonts.google.com/specimen/Merriweather);
+    
+}
+#text{
+    color: rgb(255, 255, 255);
+    padding: 45px;  
+}
+h2{
+    font-size: 40px;
+    margin-left: 25px;
+}
+p{
+    font-size: 20px;
+    color: rgb(185, 185, 185);
+    margin-top: 30px;
+    margin-left: 25px;
+}
+#info{
+    display: flex;
+    gap: 70px;
+    padding: 40px; 
+    margin-left: 25px;
+}
+header{
+    background-color: hsl(252, 63%, 14%);
+    color: white;
+    width: 78vw;
+    height: 60vh;
+    border-radius: 0.3cm;
+    box-shadow: 1px 2px 100px hsla(246, 55%, 47%, 0.637);
+}
+#head{
+    background-image: url(/images/image-header-desktop.jpg);
+    background-blend-mode: luminosity;
+    background-repeat: no-repeat; 
+    background-position: 14cm; 
+}
+header{
+    margin-top: 25vh;
+    margin-left: 12vw;
+}
