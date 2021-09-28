@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+:root{
+    --primary-color: black;
+    --secondary-color: white;
+
+    --padd-padding: 15px;
+}
+
+#myheader{
+    overflow-x: unset;
+    background-color: rgb(43, 43, 43);
+    height: 55px;
+    width: 100vw;
+    margin-top: 15px;
+}
+
+.dark-mode{
+    background: rgb(19, 18, 18);
+    color: var(--secondary-color);
+}
+
+#button{
+    padding: 15px;
+    transform: translate(80%, -95%);
+}
+
+li{
+    display: inline-flex;
+}
+a{   
+    color: var(--secondary-color);
+    text-decoration: none; 
+    padding: var(--padd-padding);
+    margin-left: 50px;
+    text-align: center;
+}
+a:hover{
+    background-color: rgba(70, 70, 70, 0.555);
+    color:rgb(255, 255, 255);
+    padding: 10px;
+}
+
+#start--info{
+    padding: var(--padd-padding);
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+#demo{
+    display: flex;
+    margin-top: 25px;
+    margin-left: 15px;
+    padding: var(--padd-padding);
+}
+
+img{
+    padding: 15px;
+}
