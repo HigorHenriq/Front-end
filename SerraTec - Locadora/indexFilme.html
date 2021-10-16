@@ -8,29 +8,51 @@
     <link rel="stylesheet" href="Catalogo.css">
 </head>
 <body>
-    <a href="index.html"><img src="img Icons/home.png" alt="home"></a>
-    <form action="">
-        <label for="text-input" required>Nome do Filme</label>
-        <input type="text" id="text-input" placeholder="Insert name">
+    <div class="background-image">
+        <img src="zimage-back-body.jpg" alt="" srcset="">
+    </div>
+<div id="nav">
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="indexFilme.html">Filmes</a></li>
+            <li><a href="indexSerie.html">Series</a></li>
+            <li><a href="#">Categorias</a></li>
+        </ul>
+    </nav>
+</div>
+    <section class="box-registro" >
+        <div id="input-registro">
+            <form action="">
+                    <h1>Cadastrar Filmes</h1>
+                    <label for="text-input" required>Nome do Filme:</label>
+                    <input type="text" id="text-input" placeholder="Insert name">
 
-        <input type="number" name="Duração" id="temp-input" placeholder="Duração">
-    <br>
-    <p>
-        <label for="">Descrição:</label>
-        <input type="text" id="desc-input" placeholder="Info about">
-    </p>    
-        <p><label for="files">Importar Capa:</label></p>
-        <p><input type="file" id="files-input" name="files" multiple></p>
-    <br>
-        <input type="submit" value="Confirmar">
+                    <input type="number" name="Temporada" id="temp-input" placeholder="Temporada" min="1">
+                    <input type="number" name="Quantidade de Episodios" id="Ep-input" placeholder="Quantidade de Episiodios" min="1">
+                <p>
+                    <label for="desc-input">Descrição:</label>
+                    <input type="text" id="desc-input" placeholder="Info about">
+                </p>
+                <div id="import-capa">   
+                <p>
+                    <label for="files">Importar Capa:</label>
+                    <input type="file" id="files-input" name="files" multiple>
+                </p>    
+                    <!-- <input type="submit" value="Confirmar"> -->
+                    <button type="submit">Confirmar</button>
+                </div>
+            </div>
+    </section>
     </form>
     <br>
-    <table border="solid">
+    <div id="table-mv">
+    <table border="1px">
         <thead>
             <tr>
-                <td><strong>Lançamentos</strong></td>
-                <td><strong> Descrição</strong></td>
-                <td><strong>Duração</strong></td>
+                <td width = "115px"><strong>Lançamentos</strong></td>
+                <td><strong>Descrição</strong></td>
+                <td width = "115px"><strong>Duração</strong></td>
                 <td><strong>Capa</strong></td>
             </tr>
         </thead>
@@ -59,5 +81,6 @@
             </tr>
         </tbody>
     </table>
+    </div>
 </body>
 </html>
