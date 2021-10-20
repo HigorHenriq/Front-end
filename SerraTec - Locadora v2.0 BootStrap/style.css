@@ -1,0 +1,73 @@
+body {
+	background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+	overflow-x: hidden;
+}
+
+#logo {
+	font-family: "Times New Roman", Times, serif;
+	font-weight: 500;
+	font-size: 30px;
+	color: #71c5da;
+}
+
+/* Section register */
+.register {
+	color: white;
+	background-color: #0f0c29;
+	height: 50%;
+	width: 50%;
+	margin: 20vh 25vw;
+	padding: 35px;
+	border-radius: 15px;
+}
+
+.register h1 {
+	text-transform: uppercase;
+	font-size: 22px;
+	color: white;
+	text-align: center;
+	margin-bottom: 25px;
+}
+
+#categoria{
+    margin-bottom: 20px;
+}
+
+.register button{
+    margin-top: 15px;
+}
+
+@media screen and (max-width: 800px) {
+    
+    .register label{
+        margin-right: 35px;
+    }
+}
+
+#descricao{
+    height: 80px;
+}
+
+.register .form-label-desc{
+    margin-top: 20px;
+}
+
+/* Section table */
+
+.catalogue{
+	background-color: #151138;
+	width: 98%;
+    margin: 15px 15px;
+	padding: 35px;
+	border-radius: 15px;
+}
+
+.catalogue .table{
+    color: white;
+    text-align: center;
+}
+
+.catalogue .table .desc{
+    word-wrap: break-word;
+    width: 450px;
+}

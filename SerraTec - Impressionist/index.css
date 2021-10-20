@@ -86,6 +86,7 @@ nav ul li:hover{
     display: flex;
     flex-direction: row;
     margin-top: 59px;
+    gap: 80px;
 }
 
 .container-assuntos h2{
@@ -98,7 +99,7 @@ nav ul li:hover{
     margin-top: 24px;
 }
 
-.assuntos-section-start{
+.coluna{
     margin: 24px;
     height: 424px;
     width: 223px;
