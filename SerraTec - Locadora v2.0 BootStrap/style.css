@@ -7,9 +7,27 @@ body {
 	font-family: "Times New Roman", Times, serif;
 	font-weight: 500;
 	font-size: 30px;
-	color: #71c5da;
+	color: #f7e9f7;
 }
 
+/* MUDAR A COR DA BARRA
+.bg-color{
+	background-color: #2a0849;
+}
+*/
+
+.btn-outline-custom{
+	color: white;
+	border-color: rgb(124, 37, 238);
+}
+/* ALTERAR COR DO BOTÃO*/
+.btn-outline-custom:hover{
+	background-color: rgb(107, 37, 238);
+}
+
+.form-color-custom{
+	border-color: rgb(140, 77, 221);
+}
 /* Section register */
 .register {
 	color: white;
@@ -47,6 +65,7 @@ body {
 #descricao{
     height: 80px;
 }
+
 
 .register .form-label-desc{
     margin-top: 20px;
