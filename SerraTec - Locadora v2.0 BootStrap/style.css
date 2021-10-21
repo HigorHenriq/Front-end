@@ -74,6 +74,9 @@ body {
     margin-top: 20px;
 }
 
+input{
+	box-shadow: none !important;
+}
 /* Section table */
 
 .catalogue{
