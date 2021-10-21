@@ -10,6 +10,9 @@ body {
 	color: #f7e9f7;
 }
 
+#logo p::first-letter{
+	color: #4b6ac0;
+}
 /* MUDAR A COR DA BARRA
 .bg-color{
 	background-color: #2a0849;
