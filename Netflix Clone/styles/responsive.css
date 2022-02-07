@@ -1,0 +1,100 @@
+@media screen and (max-width: 764px) {
+	header .container {
+		display: flex;
+		flex-direction: column;
+		gap: 4px;
+	}
+
+	header nav a {
+		margin: 4vw;
+		font-size: 16px;
+	}
+
+	header #icon-search-nav {
+		position: relative;
+		top: 30px;
+		right: 80px;
+		margin: auto;
+	}
+
+	header #avatar-user {
+		position: relative;
+		top: -10px;
+		margin-left: 45vw;
+	}
+
+	.programa-principal .container {
+		max-width: 65vw;
+	}
+
+	.programa-principal .titulo {
+		font-size: 20px;
+	}
+
+	.programa-principal .descricao {
+		font-size: 90%;
+	}
+
+	.btn-pg-principal .botao {
+		justify-content: center;
+		align-self: center;
+		width: 250px;
+		margin-top: 15px;
+	}
+}
+
+@media (min-width: 765px) and (max-width: 1206px) {
+	header .container {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+	}
+
+	header nav a {
+		font-size: 16px;
+	}
+
+	header #icon-search-nav {
+		display: flex;
+		position: relative;
+		align-self: flex-end;
+		top: -30px;
+		right: 80px;
+		margin-right: 10vw;
+	}
+
+	header #avatar-user {
+		display: flex;
+		position: relative;
+		align-self: flex-end;
+		top: -80px;
+		margin-right: 10vw;
+	}
+
+	.programa-principal .container {
+		margin-left: 25px;
+		max-width: 550px;
+	}
+}
+
+@media screen and (min-width: 1366px) {
+	header nav a {
+		font-size: 24px;
+	}
+
+	header #icon-search-nav {
+		margin-left: 30vw;
+		height: 22px;
+		width: 22px;
+	}
+
+	.programa-principal .container {
+		margin-left: 25px;
+		max-width: 750px;
+	}
+
+	.programa-principal .descricao {
+		margin-bottom: 35px;
+		font-size: 24px;
+	}
+}
