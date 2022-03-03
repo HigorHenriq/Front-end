@@ -1,0 +1,73 @@
+:root {
+	--main-color: rgb(255, 123, 0);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: aliceblue;
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+ul li {
+	list-style: none;
+	font-weight: 700;
+}
+
+.header {
+	background-color: #1d1e12;
+	display: flex;
+	/* flex-wrap para jogar o texto para baixo quando a tela for pequena */
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px;
+}
+
+.header > a {
+	font-size: 30px;
+}
+
+.header > a:hover {
+	color: var(--main-color);
+}
+
+.menu {
+	display: flex;
+}
+
+.menu li {
+	margin-left: 20px;
+}
+
+.menu li a {
+	display: block;
+	padding: 15px;
+}
+
+.menu li a:hover {
+	border-bottom: 3px solid var(--main-color);
+}
+
+.flex {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.flex > div {
+	flex: 1 1 200px;
+	margin: 10px;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+	background-color: #1d1e12;
+}
