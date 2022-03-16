@@ -1,0 +1,26 @@
+{
+	"name": "3_projeto_burger",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"serve": "vue-cli-service serve",
+		"build": "vue-cli-service build",
+		"backend": "json-server --watch db/db.json",
+		"cypress:open": "cypress open"
+	},
+	"dependencies": {
+		"core-js": "^3.8.3",
+		"json-server": "^0.17.0",
+		"vue": "^3.2.13",
+		"vue-router": "^4.0.3"
+	},
+	"devDependencies": {
+		"@cypress/vue": "^3.1.1",
+		"@cypress/webpack-dev-server": "^1.8.2",
+		"@vue/cli-plugin-babel": "~5.0.0",
+		"@vue/cli-plugin-router": "~5.0.0",
+		"@vue/cli-service": "~5.0.0",
+		"cypress": "^4.12.1",
+		"webpack-dev-server": "^4.7.4"
+	}
+}
