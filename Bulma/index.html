@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Hello Bulma!</title>
+		<link rel="stylesheet" href="style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+		/>
+	</head>
+	<body>
+		<!-- MENU -->
+		<nav class="navbar is-black has-shadow">
+			<div class="navbar-brand">
+				<a href="#" class="navbar-item">
+					<p class="is-size-5">LOGO</p>
+				</a>
+
+				<!-- 3 PONTOS PARA QUANDO FICAR EM LAYOUT MOBILE -->
+				<a class="navbar-burger" id="burger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</a>
+			</div>
+
+			<!-- CONTEUDOS DO MENU -->
+			<div class="navbar-menu" id="nav-links">
+				<div class="navbar-end">
+					<a href="#" class="navbar-item" id="conta">Conta</a>
+					<a href="#" class="navbar-item">Carrinho</a>
+					<a href="#" class="navbar-item">Sair</a>
+				</div>
+			</div>
+		</nav>
+
+		<!-- NAVEGAÇÃO ENTRE AS ROTAS -->
+		<div class="section pt-4 pb-0">
+			<nav class="breadcrumb has-arrow-separator">
+				<ul class="container">
+					<li><a class="has-text-grey">Inicio</a></li>
+					<li><a class="has-text-grey">Aprendendo bulma</a></li>
+					<li class="is-active"><a>Produto Final</a></li>
+				</ul>
+			</nav>
+		</div>
+
+		<!-- ÁREA DO PRODUTO -->
+		<main class="section">
+			<div class="container">
+				<div class="columns is-vcentered is-multiline">
+					<div class="column is-6-tablet is-5-desktop">
+						<h1 class="is-size-1 title">Produto</h1>
+						<h2 class="subtitle">Complemento</h2>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing
+							elit. Aperiam blanditiis a reiciendis nobis, quam
+							autem necessitatibus doloremque numquam maxime illo
+							repellendus nesciunt sint nisi deserunt excepturi
+							officia pariatur et? Ab.
+						</p>
+					</div>
+
+					<!-- AREA LATERAL -->
+					<div class="column is-6-tablet is-4-desktop">
+						<img src="img/main-image-2.jpg" alt="produto" />
+						<div id=""></div>
+					</div>
+					<div class="column is-12-tablet is-3-desktop">
+						<p>Restam <strong>4</strong> Unidades</p>
+						<h3 class="is-size-3" id="preco">R$3000,52</h3>
+						<div class="mt-5 container-compra">
+							<input
+								class="input is-rounded is-primary"
+								id="inputQtd"
+								type="number"
+								placeholder="Qtd"
+								min="0"
+								onchange="precoTotal(this.value)"
+								onkeyup="precoTotal(this.value)"
+								onkeydown="precoTotal(this.value)"
+							/>
+							<button class="button mt-5 is-primary">
+								Comprar
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<section class="section">
+			<div class="container">
+				<!-- is-8 is-variable É UTILIZADO PARA DAR GAP ENTRE OS TEXTOS -->
+				<div class="columns is-8 is-variable">
+					<div class="column is-7-tablet">
+						<!-- TAB DE CONTEUDO -->
+						<div class="tabs is-boxed">
+							<ul>
+								<li
+									class="is-active"
+									data-target="produto-detalhes"
+								>
+									<a>Detalhes</a>
+								</li>
+								<li data-target="produto-direito">
+									<a>Direitos</a>
+								</li>
+							</ul>
+						</div>
+
+						<!-- DATAS PARA A TAB -->
+						<div class="px-2" id="tab-conteudo">
+							<div id="produto-detalhes">
+								<h3 class="is-size-5 title">Detalhes</h3>
+								<p>
+									Lorem ipsum dolor, sit amet consectetur
+									adipisicing elit. Quibusdam aliquam ratione
+									reiciendis rem debitis distinctio, impedit
+									culpa sequi modi velit tempore quae
+									necessitatibus ipsam nisi aliquid nemo
+									perspiciatis quia at.
+								</p>
+							</div>
+							<div class="mt-5 is-hidden" id="produto-direito">
+								<h3 class="is-size-5 title">Direitos</h3>
+								<p>
+									Lorem ipsum dolor, sit amet consectetur
+									adipisicing elit. Quibusdam aliquam ratione
+									reiciendis rem debitis distinctio, impedit
+									culpa sequi modi velit tempore quae
+									necessitatibus ipsam nisi aliquid nemo
+									perspiciatis quia at.
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- MENSAGEM LATERAL -->
+					<article class="column is-5-tablet">
+						<div class="message is-primary">
+							<div class="message-header">
+								<p>Linha Colecionador</p>
+							</div>
+							<div class="message-body">
+								Lorem ipsum dolor sit amet, consectetur
+								adipiscing elit.
+								<strong>Pellentesque risus mi</strong>, tempus
+								quis placerat ut, porta nec nulla. Vestibulum
+								rhoncus ac ex sit amet fringilla. Nullam gravida
+								purus diam, et dictum
+								<a>felis venenatis</a> efficitur. Aenean ac
+								<em>eleifend lacus</em>, in mollis lectus. Donec
+								sodales, arcu et sollicitudin porttitor, tortor
+								urna tempor ligula, id porttitor mi magna a
+								neque. Donec dui urna, vehicula et sem eget,
+								facilisis sodales sem.
+							</div>
+						</div>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<!-- MAIS PRODUTOS -->
+		<section class="section is-hidden-mobile">
+			<div class="container">
+				<h3 class="is-size-3 has-text-centered">Mais Produtos</h3>
+				<div class="columns mt-6">
+					<!-- Prod 1 -->
+					<div class="column">
+						<div class="card">
+							<div class="card-image has-text-centered px-5 py-5">
+								<img src="img/main-image-2.jpg" alt="produto" />
+							</div>
+							<div class="card-content">
+								<p class="title is-size-6">Produto-c</p>
+								<p class="subtitle is-size-6">R$00,00</p>
+								<p
+									class="card-footer-item has-background-primary"
+								>
+									<a href="#" class="has-text-white"
+										>Mais...</a
+									>
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- Prod 2 -->
+					<div class="column">
+						<div class="card">
+							<div class="card-image has-text-centered px-5 py-5">
+								<img src="img/main-image-2.jpg" alt="produto" />
+							</div>
+							<div class="card-content">
+								<p class="title is-size-6">Produto-c</p>
+								<p class="subtitle is-size-6">R$00,00</p>
+								<p
+									class="card-footer-item has-background-primary"
+								>
+									<a href="#" class="has-text-white"
+										>Mais...</a
+									>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- MODAL -->
+		<div class="modal">
+			<div class="modal-background"></div>
+			<div class="modal-content has-background-white py-5 px-5">
+				<!-- BOTÃO FECHAR MODAL -->
+				<div id="fecharModal">
+					<button
+						class="modal-close is-large"
+						aria-label="close"
+					></button>
+				</div>
+
+				<h3 class="title mb-6 has-text-centered">Login</h3>
+
+				<!-- Form de login -->
+				<form action="">
+					<div class="field">
+						<label for="email" class="label">Email</label>
+						<div class="control">
+							<input
+								type="text"
+								class="input"
+								name="email"
+								placeholder="Email"
+							/>
+						</div>
+						<label for="senha" class="label mt-3">Senha</label>
+						<div class="control">
+							<input
+								type="text"
+								class="input"
+								name="senha"
+								placeholder="123456"
+							/>
+						</div>
+					</div>
+
+					<!-- CHECKBOX -->
+					<div class="field">
+						<div class="control">
+							<label for="" class="checkbox">
+								<input type="checkbox" />
+								Manter Logado
+							</label>
+						</div>
+						<button class="button mt-5 is-primary">Entrar</button>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<!-- FOOTER -->
+		<footer class="footer has-background-primary">
+			<div class="content">
+				<p class="has-text-centered has-text-white">:)</p>
+			</div>
+		</footer>
+	</body>
+
+	<script src="./assets/script.js"></script>
+</html>
